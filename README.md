@@ -19,29 +19,43 @@ It also contains the infrastructure needed for this project to run.
 
 Logos, typography and color palettes guidelines.
 
+[minerva-design-guidelines](https://github.com/alexandrelamberty/minerva-design-guidelines)
+
 ### Entity relationship Model (RM)
 
 Business Analysis of the basic requirement of the system.
+
+[minerva-erm](https://github.com/alexandrelamberty/minerva-erm)
 
 ### Relational Modal (RM)
 
 Database structure of the system.
 
+[minerva-rm](https://github.com/alexandrelamberty/minerva-rm)
+
 ### API Specification
 
 OpenAPI specification describing how to interact with the system.
+
+[minerva-api-spec](https://github.com/alexandrelamberty/minerva-erm)
 
 ### Server Application
 
 Server application exposing an API that implement the above specification.
 
+[minerva-api](https://github.com/alexandrelamberty/minerva-api)
+
 ### Web Application
 
 Web application that consume the above API to interact with the system.
 
+[minerva-web-app](https://github.com/alexandrelamberty/minerva-web-app)
+
 ### Website
 
 Business website that provide a catalog of trainings that you can enroll on.
+
+[minerva-website](https://github.com/alexandrelamberty/minerva-website)
 
 ## Requirements
 
