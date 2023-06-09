@@ -1,6 +1,6 @@
 # Minerva
 
-Training management system solution.
+Client/server training management system solution.
 
 ## Key features
 
@@ -12,8 +12,7 @@ This project is split in multiple projects/repositories.
 
 ### Main project
 
-This repository contains all the related projects.
-It also contains the infrastructure needed for this project to run.
+This repository contains all the related projects, as well as the necessary infrastructure for running this project. Please refer to the [docker-compose.yml](./docker-compose.yml) file and the [Usage](https://github.com/alexandrelamberty/minerva#usage) section, for the required configurations.
 
 ### Design Guidelines & Assets
 
@@ -57,6 +56,32 @@ Business website that provide a catalog of trainings that you can enroll on.
 
 [minerva-website](https://github.com/alexandrelamberty/minerva-website)
 
+## Project architecture
+
+## Project technologies
+
+Here are some of the languages, formats, frameworks, and technologies used trough this project.
+
+- [JavaScript]()
+- [TypeScript]()
+- [HTML]()
+- [CSS]()
+- [TailwindCSS]()
+- [Vite]()
+- [NPM]() Fix this
+- [PNPM]()
+- [React]()
+- [Redux]()
+- [Node.js]()
+- [Express.js]()
+- [Sequelize]()
+- [OpenAPI]()
+- [OpenAI]()
+- [Docker]()
+- [NGINX]()
+
+## Demo
+
 ## Requirements
 
 - [Docker](https://docs.docker.com/get-started/overview/)
@@ -66,7 +91,9 @@ Business website that provide a catalog of trainings that you can enroll on.
 
 ### Docker
 
-Create an .env file
+The stack provides three services that require environment variables in order to function properly.
+
+Create an .env file and fill it with the following configuration:
 
 ```properties
 NODE_ENV=development
@@ -85,13 +112,30 @@ OPENAI_API_KEY=d7a481461577ba4c3c4c6946cca7204b
 VITE_API_URL=http://localhost:3000
 ```
 
+> Verify that the ports specified, `API_PORT` and `DB_PORT` are not already in use`
+> Create an account on the [OpenAI](https://platform.openai.com/) platform to benefit from the integration of A.I. in the system. :rofl:
+
 Start all the services with the provided configuration
 
 ```shell
 docker compose --env-file .env up 
 ```
 
+Now the system must be up and running!
+
+You can now access the services at the following url:
+
+- Website @ [http://localhost:80](http://localhost:80)
+- Web Application @ [http://localhost:8080](http://localhost:8080)
+- API @ [http://localhost:8090](http://localhost:8090)
+
 ### Portainer
+
+Use the Minerva main repository that contains the Docker infrastructure.
+
+```shell
+https://github.com/alexandrelamberty/minerva
+```
 
 ## Development
 
