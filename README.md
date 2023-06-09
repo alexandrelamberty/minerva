@@ -10,6 +10,7 @@ Training system solution.
 NODE_ENV=development
 API_PORT=3000
 DB_SERVER=localhost
+DB_ROOT_PASSWORD=localhost
 DB_DATABASE=minerva
 DB_USERNAME=minerva
 DB_PASSWORD=minerva
