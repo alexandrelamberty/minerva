@@ -1,7 +1,6 @@
 # Docker Compose file for a multi-service application.
 # Defines services for a MySQL instance, API server application, Web application, and Website.
 
-version: '3.1'
 services:
   # TODO: Add nginx service:
   mysql:
