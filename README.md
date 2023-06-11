@@ -32,7 +32,7 @@ Server application exposing an API that implement the above specification.
 Web application that consume the above API to interact with the system.
 
 - [Minerva Website](https://github.com/alexandrelamberty/minerva-website)
-Business website that provide a catalog of trainings that you can enroll on.
+Business website that provide a catalogue of trainings that you can enrol on.
 
 ## Project architecture
 
