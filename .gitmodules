@@ -7,3 +7,6 @@
 [submodule "minerva-web-app"]
 	path = minerva-web-app
 	url = https://github.com/alexandrelamberty/minerva-web-app
+[submodule "minerva-rm"]
+	path = minerva-rm
+	url = https://github.com/alexandrelamberty/minerva-rm
