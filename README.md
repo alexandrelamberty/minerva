@@ -10,51 +10,29 @@ Client/server training management system solution.
 
 This project is split in multiple projects/repositories.
 
-### Main project
+- [Minerva](https://github.com/alexandrelamberty/minerva)
+This repository contains all the related projects, as well as the necessary infrastructure for running this project.
 
-This repository contains all the related projects, as well as the necessary infrastructure for running this project. Please refer to the [docker-compose.yml](./docker-compose.yml) file and the [Usage](https://github.com/alexandrelamberty/minerva#usage) section, for the required configurations.
-
-### Design Guidelines & Assets
-
+- [Minerva Design Guidelines](https://github.com/alexandrelamberty/minerva-design-guidelines)
 Logos, typography and color palettes guidelines.
 
-[minerva-design-guidelines](https://github.com/alexandrelamberty/minerva-design-guidelines)
-
-### Entity relationship Model (RM)
-
+- [Entity relationship Model (RM)](https://github.com/alexandrelamberty/minerva-erm)
 Business Analysis of the basic requirement of the system.
 
-[minerva-erm](https://github.com/alexandrelamberty/minerva-erm)
-
-### Relational Modal (RM)
-
+- [Relational Modal (RM)](https://github.com/alexandrelamberty/minerva-rm)
 Database structure of the system.
 
-[minerva-rm](https://github.com/alexandrelamberty/minerva-rm)
-
-### API Specification
-
+- [Minerva API Specification](https://github.com/alexandrelamberty/minerva-erm)
 OpenAPI specification describing how to interact with the system.
 
-[minerva-api-spec](https://github.com/alexandrelamberty/minerva-erm)
-
-### Server Application
-
+- [Minerva API](https://github.com/alexandrelamberty/minerva-api)
 Server application exposing an API that implement the above specification.
 
-[minerva-api](https://github.com/alexandrelamberty/minerva-api)
-
-### Web Application
-
+- [Minerva Web Application](https://github.com/alexandrelamberty/minerva-web-app)
 Web application that consume the above API to interact with the system.
 
-[minerva-web-app](https://github.com/alexandrelamberty/minerva-web-app)
-
-### Website
-
+- [Minerva Website](https://github.com/alexandrelamberty/minerva-website)
 Business website that provide a catalog of trainings that you can enroll on.
-
-[minerva-website](https://github.com/alexandrelamberty/minerva-website)
 
 ## Project architecture
 
@@ -96,7 +74,10 @@ The stack provides three services that require environment variables in order to
 Create an .env file and fill it with the following configuration:
 
 ```properties
+# Minerva Environment variables
+# Node
 NODE_ENV=development
+# Server Application
 API_PORT=3000
 DB_SERVER=localhost
 DB_ROOT_PASSWORD=localhost
@@ -108,8 +89,15 @@ JWT_SECRET=d7a481461577ba4c3c4c6946cca7204b
 JWT_EXPIRE=1d
 JWT_ISSUER=minerva
 JWT_AUDIENCE=web-minerva
+MAIL_SERVER=xxx
+MAIL_USERNAME=xxx
+MAIL_PASSWORD=xxx
+MAIL_VALIDATION=false
 OPENAI_API_KEY=d7a481461577ba4c3c4c6946cca7204b
+# Web Application
 VITE_API_URL=http://localhost:3000
+# Website
+API_URL=http://localhost:3000
 ```
 
 > Verify that the ports specified, `API_PORT` and `DB_PORT` are not already in use`
