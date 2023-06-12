@@ -46,7 +46,6 @@ Here are some of the languages, formats, frameworks, and technologies used troug
 - [CSS]()
 - [TailwindCSS]()
 - [Vite]()
-- [NPM]() Fix this
 - [PNPM]()
 - [React]()
 - [Redux]()
@@ -100,7 +99,7 @@ VITE_API_URL=http://localhost:3000
 API_URL=http://localhost:3000
 ```
 
-> Verify that the ports specified, `API_PORT` and `DB_PORT` are not already in use`
+> Verify that the ports specified, `API_PORT` and `DB_PORT` are not already in use.
 > Create an account on the [OpenAI](https://platform.openai.com/) platform to benefit from the integration of A.I. in the system. :rofl:
 
 Start all the services with the provided configuration
